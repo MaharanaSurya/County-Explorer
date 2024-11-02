@@ -1,0 +1,104 @@
+.page-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #f5f5f5; 
+  padding: 20px; /* Added padding to prevent content from touching the edges */
+}
+
+.country-details {
+    width: 100%; /* Change to 100% to allow full-width on small screens */
+    max-width: 800px; /* Keep max-width for larger screens */
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.country-details button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.country-details button:hover {
+    background-color: #0056b3;
+}
+
+.country-details img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+}
+
+.country-details h2 {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.country-details p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .country-details {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .country-details h2 {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    .country-details p {
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    .country-details img {
+        width: 100px; /* Smaller image size */
+        height: 100px; /* Smaller image size */
+    }
+
+    .country-details button {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 6px 12px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .country-details {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .country-details h2 {
+        font-size: 1.25rem; /* Further reduce font size */
+    }
+
+    .country-details p {
+        font-size: 0.9rem; /* Further reduce font size */
+    }
+
+    .country-details img {
+        width: 80px; /* Smaller image size */
+        height: 80px; /* Smaller image size */
+    }
+
+    .country-details button {
+        font-size: 0.8rem; /* Even smaller button text */
+        padding: 5px 10px; /* Adjust padding */
+    }
+}
