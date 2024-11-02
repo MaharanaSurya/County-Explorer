@@ -10,7 +10,7 @@
   gap: 10px;
   margin: 20px 0;
   justify-content: center;
-  flex-wrap: wrap; /* Allow controls to wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .controls input {
@@ -19,7 +19,7 @@
   border-radius: 4px;
   border: 1px solid #ddd;
   transition: box-shadow 0.2s;
-  width: 250px; /* Base width */
+  width: 250px; 
 }
 
 .controls input:focus {
@@ -56,25 +56,24 @@
 }
 
 .country-card {
-  margin-bottom: 20px; /* Space between cards */
-  padding: 15px; /* Optional padding for country card */
-  border: 1px solid #ddd; /* Optional border for separation */
-  border-radius: 4px; /* Rounded corners */
-  background-color: #f9f9f9; /* Background color */
+  margin-bottom: 20px; 
+  padding: 15px;
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  background-color: #f9f9f9; 
 }
 
 .country-card.list {
-  width: 700px; /* Default width for list view */
+  width: 700px;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .controls input {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%; 
   }
 
   .country-card.list {
-    width: 95%; /* Full width for list view on smaller screens */
+    width: 95%; 
   }
   .on_mobile{
     display: none;
@@ -83,16 +82,16 @@
 
 @media (max-width: 480px) {
   .controls {
-    flex-direction: column;  /*Stack controls vertically on very small screens */
-    align-items: stretch; /* Stretch items to full width */
+    flex-direction: column;  
+    align-items: stretch; 
   }
 
   .controls input, 
   .controls button {
-    width: 100%; /* Full width for both input and button */
+    width: 100%;
   }
 
   .countries-container.grid {
-    gap: 0px; /* Reduce gap between cards on small screens */
+    gap: 0px; 
   }
 }
