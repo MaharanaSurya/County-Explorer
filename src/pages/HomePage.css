@@ -75,9 +75,6 @@
   .country-card.list {
     width: 95%; 
   }
-  .on_mobile{
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {

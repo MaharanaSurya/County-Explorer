@@ -47,7 +47,7 @@ const HomePage = () => {
           <option value="Europe">Europe</option>
           <option value="Oceania">Oceania</option>
         </select>
-        <button className='on_mobile' onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}>
+        <button onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}>
           Toggle {viewMode === 'grid' ? 'List' : 'Grid'} View
         </button>
       </div>
